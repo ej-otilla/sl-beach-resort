@@ -847,3 +847,21 @@ tr:hover td {
     line-height: 0.75rem;
     color: white;
 }
+
+/* =============
+   MEDIA QUERIES
+   ============= */
+
+/* Media query for devices >= 502px */
+@media screen and (min-width: 502px) {
+    
+    /* HOMEPAGE */
+    
+    #hero header h1 {
+        line-height: 6rem;
+    }
+
+    #hero header h2 {
+        padding-top: 0;
+    }
+}
