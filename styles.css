@@ -184,3 +184,39 @@ nav ul li a {
     display: none;
     z-index: 0;
 }
+
+/* HOMEPAGE CONTENT */
+
+#homepage-content h2 {
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+    color: black;
+}
+
+#homepage-content figure {
+    background-color: #fff;
+    padding: 1rem;
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+#homepage-content figure::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(135deg, #23db70, #6e9add);
+}
+
+#homepage-content figure img {
+    width: 100%;
+}
+
+#homepage-content figure figcaption {
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+}
