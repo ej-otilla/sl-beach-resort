@@ -663,3 +663,113 @@ nav ul li a {
 #other-dining-options #opt3 {
     margin-bottom: 0;
 }
+
+/* ========
+   SPA PAGE 
+   ======== */
+
+#spa-page-container {
+    margin: 9rem 2rem 2rem;
+}
+
+#spa-page-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+}
+
+#spa-page-container h2 {
+    font-size: 1rem;
+    color: #5c5c5c;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* SPA TABLES */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+td {
+    background-color: #fff;
+}
+
+tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}
+
+/* SPA SECTIONS */
+
+#massages h2,
+#facials h2,
+#body-treatments h2,
+#manicures-and-pedicures h2,
+#enhancements h2,
+#wellness-programs h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+#massages table,
+#facials table,
+#body-treatments table,
+#manicures-and-pedicures table,
+#enhancements table,
+#wellness-programs table {
+    margin-top: 1rem;
+}
+
+/* IMPORTANT NOTES */
+
+#important-notes {
+    background: linear-gradient(135deg, #23db70, #6e9add);
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+#important-notes h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: black;
+}
+
+#important-notes ul {
+    list-style: none;
+    text-align: center;
+    color: black;
+    padding: 0;
+}
+
+#important-notes li {
+    margin-bottom: .75rem;
+}
