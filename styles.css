@@ -314,3 +314,91 @@ nav ul li a {
 #homepage-testimonials blockquote:last-child {
     margin-bottom: 2rem;
 }
+
+/* ===================
+   ACCOMMODATIONS PAGE 
+   =================== */
+
+#accommodations-page-container {
+    margin: 9rem 2rem 2rem;
+}
+
+#accommodations-page-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+}
+
+#accommodations-page-container h2 {
+    font-size: 1rem;
+    color: #5c5c5c;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#accommodations {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+#accommodations figure {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#accommodations figure img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#accommodations figure figcaption {
+    padding: 1rem;
+}
+
+#accommodations figure h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: black;
+}
+
+#accommodations figure p {
+    color: black;
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+#accommodations figure details {
+    margin-top: 1rem;
+}
+
+#accommodations figure details summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#accommodations figure details ul {
+    margin: 1rem 0 0 0;
+}
+
+#accommodations figure details li {
+    margin: 0.5rem 0;
+}
+
+#accommodations #premium {
+    background-color: gold;
+    background-image: linear-gradient(45deg, #ffd700, #ffcc00);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 223, 0, 0.4), 0 0 14px rgba(255, 223, 0, 0.3);
+    text-shadow: 0 0 5px rgba(255, 223, 0, 0.5);
+}
