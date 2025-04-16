@@ -402,3 +402,138 @@ nav ul li a {
     box-shadow: 0 0 10px rgba(255, 223, 0, 0.4), 0 0 14px rgba(255, 223, 0, 0.3);
     text-shadow: 0 0 5px rgba(255, 223, 0, 0.5);
 }
+
+/* ===============
+   ACTIVITIES PAGE 
+   =============== */
+
+#activities-page-container {
+    margin: 9rem 2rem 2rem;
+}
+
+#activities-page-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+}
+
+#activities-page-container p {
+    font-size: 1rem;
+    color: #5c5c5c;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+#activities-page-container h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ACTIVITIES & EXCURSIONS */
+
+#activities,
+#excursions {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+#activities figure,
+#excursions figure {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#activities figure:last-child,
+#excursions figure:last-child {
+    margin-bottom: 2rem;
+}
+
+#activities figure img,
+#excursions figure img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#activities figure figcaption,
+#excursions figure figcaption {
+    padding: 1rem;
+}
+
+#activities figure h3,
+#excursions figure h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: black;
+}
+
+#activities figure p,
+#excursions figure p {
+    color: black;
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+#activities figure details,
+#excursions figure details {
+    margin-top: 1rem;
+}
+
+#activities figure details summary,
+#excursions figure details summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#activities figure details ul,
+#excursions figure details ul {
+    margin: 1rem 0 0 0;
+}
+
+#activities figure details li,
+#excursions figure details li {
+    margin: 0.5rem 0;
+}
+
+/* BOOKING & INFORMATION */
+
+#booking-info {
+    background: linear-gradient(135deg, #23db70, #6e9add);
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#booking-info h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#booking-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#booking-info li {
+    margin-bottom: .75rem;
+}
+
+#booking-info p {
+    font-weight: bold;
+}
