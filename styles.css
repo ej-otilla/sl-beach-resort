@@ -16,3 +16,114 @@ body {
     font-family: Outfit, Arial, Helvetica, sans-serif;
     background-color: rgb(220, 220, 220);
 }
+
+/* ========
+   HOMEPAGE 
+   ======== */
+
+/* HEADER */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background: rgba(0, 0, 0, 1);
+}
+
+/* BUTTONS */
+
+button {
+    all: unset;
+}
+
+/* NAVIGATION */
+
+nav .menu-toggle {
+    font-size: 30px;
+    background: linear-gradient(135deg, #23db70, #6e9add);
+    color: transparent;
+    background-clip: text;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul {
+    position: absolute;
+    top: 50px;
+    right: 36px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(172, 172, 172, 0.1);
+    backdrop-filter: blur(25px);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 0;
+    flex-direction: column;
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    z-index: 3;
+}
+
+nav ul.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    z-index: 3;
+}
+
+nav ul li {
+    list-style: none;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+nav ul li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a {
+    all: unset;
+    text-transform: uppercase;
+}
+
+/* CURRENT WEATHER CONDITIONS */
+
+.current-conditions {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+#temperature {
+    margin: 0;
+}
+
+#icon {
+    width: 30px;
+}
