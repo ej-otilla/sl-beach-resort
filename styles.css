@@ -1040,3 +1040,168 @@ tr:hover td {
         padding: 2rem;
     }
 }
+
+/* Media query for devices >= 1000px */
+@media screen and (min-width: 1000px) {
+    
+    /* HOMEPAGE */
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #logo {
+        margin: 1rem 0 0.5rem;
+        width: 200px;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav .menu-toggle {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+        background: transparent;
+        align-items: center;
+        box-shadow: none;
+        height: auto;
+        padding: 0;
+        gap: 2rem;
+        border: none;
+        outline: none;
+        margin: 0;
+        justify-content: center;
+    }
+
+    nav ul li {
+        padding: 0;
+        background: none;
+    }
+
+    nav ul li a {
+        all: unset;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    nav ul li a:hover {
+        color: transparent;
+        background-image: linear-gradient(135deg, #23db70, #6e9add);
+        background-clip: text;
+    }
+
+    #hero header {
+        position: absolute;
+        top: calc((100% + -160px) / 2 + 160px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 100%;
+        padding: 0 2rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #hero header h1 {
+        font-size: 6.5rem;
+        line-height: 8rem;
+    }
+
+    #hero header h2 {
+        font-size: 1.25rem;
+    }
+
+    /* CURRENT WEATHER CONDITIONS */
+
+    .current-conditions {
+        top: 140px;
+    }
+
+    #homepage-accommodations {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 0 2rem;
+        align-items: stretch;
+    }
+
+    #homepage-accommodations figure {
+        margin: 0;
+        background-color: #fff;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        min-height: 100%;
+    }
+
+    #homepage-accommodations figure::after {
+        margin-bottom: 10px;
+    }
+
+    /* ACCOMMODATIONS PAGE */
+
+    #accommodations-page-container {
+        margin: 13rem 2rem 2rem;
+    }
+
+    #accommodations {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto;
+    }
+
+    #accommodations #premium {
+        grid-column: span 4;
+        grid-row: span 2;
+    }
+
+    #accommodations figure:not(#premium) {
+        grid-row: 3;
+    }
+
+    /* ACTIVITIES PAGE */
+
+    #activities-page-container {
+        margin: 13rem 2rem 2rem;
+    }
+
+    /* DINING PAGE */
+
+    #dining-page-container {
+        margin: 13rem 2rem 2rem;
+    }
+
+    #main-dining-options article img,
+    #other-dining-options article img {
+        height: 450px;
+    }
+
+    /* SPA PAGE */
+
+    #spa-page-container {
+        margin: 13rem 2rem 2rem;
+    }
+
+    /* TESTIMONIALS PAGE */
+
+    #testimonials-page-container {
+        margin: 13rem 2rem 2rem;
+    }
+}
