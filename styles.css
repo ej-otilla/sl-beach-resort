@@ -537,3 +537,129 @@ nav ul li a {
 #booking-info p {
     font-weight: bold;
 }
+
+/* ===========
+   DINING PAGE 
+   =========== */
+
+#dining-page-container {
+    margin: 9rem 2rem 2rem;
+}
+
+#dining-page-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+}
+
+#dining-page-container p {
+    font-size: 1rem;
+    color: #5c5c5c;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+/* MAIN & OTHER DINING OPTIONS */
+
+#main-dining-options,
+#other-dining-options {
+    margin-top: 2rem;
+}
+
+#main-dining-options h2,
+#other-dining-options h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+#main-dining-options article,
+#other-dining-options article {
+    background: linear-gradient(135deg, #23db70, #6e9add);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+}
+
+#main-dining-options article header h3,
+#other-dining-options article header h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+#main-dining-options article p,
+#other-dining-options article p {
+    color: black;
+    font-weight: 500;
+}
+
+#main-dining-options article details,
+#other-dining-options article details {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+#main-dining-options article details summary,
+#other-dining-options article details summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#main-dining-options article details ul,
+#other-dining-options article details ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#main-dining-options article details li,
+#other-dining-options article details li {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+#main-dining-options article img,
+#other-dining-options article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+#main-dining-options article button,
+#other-dining-options article button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    background-color: #23db70;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+#main-dining-options article button:hover,
+#other-dining-options article button:hover {
+    background-color: #6e9add;
+}
+
+#main-dining-options article button:active,
+#other-dining-options article button:active {
+    transform: translateY(1px);
+}
+
+#other-dining-options #opt3 {
+    margin-bottom: 0;
+}
