@@ -835,3 +835,15 @@ tr:hover td {
     color: black;
     margin: 2rem 0 0;
 }
+
+/* ==================
+   FOOTER - COPYRIGHT 
+   ================== */
+
+.copyright {
+    padding: 1rem 2rem;
+    background-color: black;
+    text-align: center;
+    line-height: 0.75rem;
+    color: white;
+}
