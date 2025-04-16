@@ -865,3 +865,178 @@ tr:hover td {
         padding-top: 0;
     }
 }
+
+/* Media query for devices >= 768px */
+@media screen and (min-width: 768px) {
+    
+    /* HOMEPAGE */
+
+    #hero header h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+
+    #hero header h2 {
+        font-size: 1.1rem;
+        padding-top: 1rem;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    /* HOMEPAGE SERVICES */
+
+    #homepage-services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+
+    #homepage-services figure {
+        margin: 0;
+        min-height: 100%;
+    }
+
+    #homepage-services figure::after {
+        margin-bottom: 10px;
+    }
+
+    /* HOMEPAGE TESTIMONIALS */
+
+    #homepage-testimonials {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    #homepage-testimonials blockquote {
+        flex: 1;
+        margin: 0 0.5rem 2rem;
+    }
+
+    #homepage-testimonials blockquote:first-child {
+        margin-left: 2.5rem;
+    }
+
+    #homepage-testimonials blockquote:last-child {
+        margin-right: 2.5rem;
+    }
+
+    /* ACCOMMODATIONS PAGE */
+
+    #accommodations {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #accommodations #premium {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    /* ACTIVITIES PAGE */
+
+    #activities,
+    #excursions {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #activities-page-container h1,
+    #activities-page-container h2,
+    #booking-info h2 {
+        grid-column: span 2;
+    }
+
+    #activities figure {
+        margin-bottom: 2rem;
+    }
+
+    #excursions figure:last-child {
+        grid-column: span 2;
+    }
+
+    /* DINING PAGE */
+
+    #main-dining-options,
+    #other-dining-options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    #main-dining-options h2,
+    #other-dining-options h2 {
+        grid-column: span 2;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #main-dining-options article,
+    #other-dining-options article {
+        grid-column: span 1;
+        margin-bottom: 0;
+    }
+
+    #main-dining-options article img,
+    #other-dining-options article img {
+        height: 300px;
+    }
+
+    #other-dining-options #opt3 {
+        grid-column: span 2;
+    }
+
+    /* SPA PAGE */
+
+    #spa-page-container h2 {
+        font-size: 1.25rem;
+    }
+
+    #spa-page-container section h2 {
+        margin-bottom: 1rem;
+    }
+
+    table {
+        border-spacing: 0;
+    }
+
+    th,
+    td {
+        padding: 1.5rem;
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+    #massages table,
+    #facials table,
+    #body-treatments table,
+    #manicures-and-pedicures table,
+    #enhancements table,
+    #wellness-programs table {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    /* TESTIMONIALS PAGE */
+
+    #testimonials {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonial:last-child {
+        grid-column: span 2;
+    }
+
+    /* FOOTER */
+
+    .copyright {
+        padding: 2rem;
+    }
+}
