@@ -37,3 +37,18 @@ const navList = document.getElementById('navList');
 menuToggle.addEventListener('click', () => {
     navList.classList.toggle('active');
 });
+
+// Current weather conditions in Cancun, Mexico
+
+fetch("https://api.openweathermap.org/data/2.5/weather?q=Cancun&appid=8ce0e2985d2cd788288e7470054dd507&units=metric")
+
+.then(response => response.json())
+.then(data => {
+    const roundedTemp = Math.round(data.main.temp);
+    temperature.textContent = "Current Conditions: " + roundedTemp + "°C";
+
+    const weatherIcon = "https://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png";
+    icon.src = weatherIcon;
+    icon.alt = data.weather[0].description;
+    icon.style.display = "inline-block";
+})
