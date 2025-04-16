@@ -28,3 +28,12 @@ if (videos.length > 0) {
     const videoSwitchInterval = 5 * 1000;
     setInterval(switchVideo, videoSwitchInterval);
 }
+
+// Toggle menu visibility (hamburger menu)
+
+const menuToggle = document.getElementById('menuToggle');
+const navList = document.getElementById('navList');
+
+menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+});
